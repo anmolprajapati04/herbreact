@@ -1,0 +1,146 @@
+/* General Styling */
+.contact-container {
+    font-family: 'Arial', sans-serif;
+    color: #333;
+    background-color: #f0f9f4; /* Light green background for a fresh, healthy feel */
+    padding: 50px 20px;
+    text-align: center;
+    animation: fadeInUp 2s ease-out;
+  }
+  
+  .contact-header {
+    margin-bottom: 40px;
+  }
+  
+  .contact-header h2 {
+    font-size: 36px;
+    color: #007f3d; /* Rich green for a healthy vibe */
+    font-weight: bold;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+    animation: fadeInLeft 1.5s ease-out;
+  }
+  
+  .contact-header p {
+    font-size: 18px;
+    color: #555;
+    margin-top: 10px;
+    animation: fadeInLeft 2s ease-out;
+    line-height: 1.6;
+  }
+  
+  /* Form Styling */
+  .contact-form-container {
+    display: flex;
+    justify-content: center;
+    animation: fadeIn 1.5s ease-in-out;
+  }
+  
+  .contact-form {
+    background: linear-gradient(145deg, #ffffff, #e8f5e9); /* Light gradient for a soft, natural feel */
+    border-radius: 12px;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+    padding: 35px;
+    width: 100%;
+    max-width: 600px;
+    animation: zoomIn 2s ease;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .contact-form:hover {
+    transform: translateY(-5px); /* Subtle hover effect for the form */
+  }
+  
+  /* Input and Textarea Fields */
+  .form-group {
+    margin-bottom: 20px;
+  }
+  
+  .form-group label {
+    display: block;
+    font-size: 16px;
+    color: #333;
+    margin-bottom: 8px;
+    font-weight: bold;
+  }
+  
+  .form-group input,
+  .form-group textarea {
+    width: 100%;
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 16px;
+    color: #333;
+    margin-top: 5px;
+    background-color: #fafafa; /* Light grey background for inputs */
+    transition: border-color 0.3s ease;
+  }
+  
+  .form-group input:focus,
+  .form-group textarea:focus {
+    border-color: #00b050; /* Green focus border */
+    outline: none;
+    box-shadow: 0 0 10px rgba(0, 176, 80, 0.3); /* Soft glow effect on focus */
+  }
+  
+  /* Submit Button */
+  .submit-button {
+    background-color: #00b050; /* Fresh green button */
+    color: white;
+    font-size: 18px;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    width: 100%;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    box-shadow: 0 4px 10px rgba(0, 176, 80, 0.2);
+  }
+  
+  .submit-button:hover {
+    background-color: #007f3d; /* Darker green on hover */
+    transform: scale(1.05); /* Slightly enlarge button on hover */
+  }
+  
+  .submit-button:active {
+    background-color: #005f28; /* Dark green for active state */
+  }
+  
+  /* Animations */
+  @keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+  }
+  
+  @keyframes fadeInLeft {
+    from { opacity: 0; transform: translateX(-50px); }
+    to { opacity: 1; transform: translateX(0); }
+  }
+  
+  @keyframes fadeInUp {
+    from { opacity: 0; transform: translateY(30px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+  
+  @keyframes zoomIn {
+    from { transform: scale(0.9); opacity: 0; }
+    to { transform: scale(1); opacity: 1; }
+  }
+  
+  /* Mobile Responsiveness */
+  @media (max-width: 768px) {
+    .contact-container {
+      padding: 20px;
+    }
+    .contact-form {
+      width: 100%;
+    }
+    .contact-header h2 {
+      font-size: 28px; /* Smaller heading on mobile */
+    }
+    .contact-header p {
+      font-size: 16px;
+    }
+  }
+  
+    

@@ -1,0 +1,105 @@
+.menu-container {
+  padding: 30px;
+  text-align: center;
+}
+
+.menu-title {
+  font-size: 36px;
+  color: #007f3d;
+  margin-bottom: 15px;
+}
+
+.menu-description {
+  font-size: 18px;
+  margin-bottom: 40px;
+  color: #666;
+}
+
+.menu-items {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.menu-item {
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  padding: 20px;
+  text-align: center;
+  transition: transform 0.3s ease-in-out;
+}
+
+.menu-item:hover {
+  transform: translateY(-10px);
+}
+
+.menu-image {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+.menu-item-title {
+  font-size: 24px;
+  color: #333;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.menu-item-description {
+  font-size: 16px;
+  color: #666;
+  margin-bottom: 15px;
+}
+
+.menu-item-price {
+  font-size: 20px;
+  color: #007f3d;
+  margin-bottom: 20px;
+}
+
+.menu-item-actions {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.btn-add, .btn-buy {
+  padding: 10px 20px;
+  border: none;
+  font-size: 16px;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.btn-add {
+  background-color: #00b050;
+  color: white;
+}
+
+.btn-buy {
+  background-color: #f39c12;
+  color: white;
+}
+
+.btn-add:hover {
+  background-color: #007f3d;
+  transform: scale(1.05);
+}
+
+.btn-buy:hover {
+  background-color: #e67e22;
+  transform: scale(1.05);
+}
+
+@media (max-width: 768px) {
+  .menu-items {
+    grid-template-columns: 1fr;
+  }
+}
